@@ -18,7 +18,7 @@ const PurchasedItems = () => {
         src="/images/home-page/bg-items.jpg"
         alt="banner-right-bg"
         fill
-        priority
+        loading="lazy"
         className="object-cover opacity-10 -z-10"
       />
       {/* overlay */}

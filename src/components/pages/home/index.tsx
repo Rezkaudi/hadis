@@ -1,22 +1,21 @@
+import dynamic from "next/dynamic";
 
-
-// sections
 import Hero from "./sections/Hero";
 import ContactFixedBanner from "./sections/ContactFixedBanner";
-import Flow from "./sections/Flow";
-import WhyChoose from "./sections/WhyChoose";
-import VideoSection from "./sections/VideoSection";
-import BlogsPost from "./sections/BlogsPost";
-import ContactBanner from "./sections/ContactBanner";
-import PurchasedItems from "./sections/PurchasedItems";
-import PurchaseResults from "./sections/PurchaseResults";
-import PurchaseProcess from "./sections/PurchaseProcess";
-import BusinessPolicy from "./sections/BusinessPolicy";
-import ReviewsReceived from "./sections/ReviewsReceived";
-import FrequentlyAskedQuestions from "./sections/FrequentlyAskedQuestions";
-import CompanyProfile from "./sections/CompanyProfile";
-import Inquiry from "@/components/common/sections/Inquiry";
 
+const Flow = dynamic(() => import("./sections/Flow"));
+const WhyChoose = dynamic(() => import("./sections/WhyChoose"));
+const VideoSection = dynamic(() => import("./sections/VideoSection"));
+const BlogsPost = dynamic(() => import("./sections/BlogsPost"));
+const ContactBanner = dynamic(() => import("./sections/ContactBanner"));
+const PurchasedItems = dynamic(() => import("./sections/PurchasedItems"));
+const PurchaseResults = dynamic(() => import("./sections/PurchaseResults"));
+const PurchaseProcess = dynamic(() => import("./sections/PurchaseProcess"));
+const BusinessPolicy = dynamic(() => import("./sections/BusinessPolicy"));
+const ReviewsReceived = dynamic(() => import("./sections/ReviewsReceived"));
+const FrequentlyAskedQuestions = dynamic(() => import("./sections/FrequentlyAskedQuestions"));
+const CompanyProfile = dynamic(() => import("./sections/CompanyProfile"));
+const Inquiry = dynamic(() => import("@/components/common/sections/Inquiry"));
 
 const Index = () => {
   return (

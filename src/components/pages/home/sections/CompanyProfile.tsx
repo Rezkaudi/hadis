@@ -9,8 +9,9 @@ const CompanyProfile = () => {
       <div className="py-[50px] lg:py-[60px] px-4 md:px-[30px] lg:px-[95px] md:mx-auto md:w-[90%] lg:w-[62%] bg-[#FFF7F8] rounded-[10px]">
         {data.map((item) => (
           <div
-            className={`space-y-2 md:space-y-0 md:space-x-24 lg:space-x-[145px] pb-[20px] border-b-[1px] border-[#D9D9D9] text-[#111111]  md:flex items-center ${item.id === 1 ? "" : "pt-[20px]"
-              }`}
+            className={`space-y-2 md:space-y-0 md:space-x-24 lg:space-x-[145px] pb-[20px] border-b-[1px] border-[#D9D9D9] text-[#111111]  md:flex items-center ${
+              item.id === 1 ? "" : "pt-[20px]"
+            }`}
             key={item.id}
           >
             <h3 className="text-[16px] leading-[24px] font-bold min-w-[100px]">

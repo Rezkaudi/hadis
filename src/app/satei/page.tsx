@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 
-import Inquiry from "@/components/common/sections/Inquiry";
+
+const Inquiry = dynamic(() => import("@/components/common/sections/Inquiry"));
 
 // baseUrl
 import { baseUrl } from '@/utils/baseUrl';

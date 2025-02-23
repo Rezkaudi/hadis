@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             ))}
           </ul>
 
-          <div className="flex tems-start lg:items-center justify-center gap-2 font-bold">
+          <div className="flex items-start lg:items-center justify-center gap-2 font-bold">
             {navbarLinksData.navbarBtns?.map((item) => (
               <span key={item.id}>
                 <Link href={item.href} title={`Navigate to ${item.label}`}>

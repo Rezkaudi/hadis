@@ -5,10 +5,15 @@ interface IPostCardProps {
   title: string;
   imageSrc: string;
   description: string;
-  className?: string
+  className?: string;
 }
 
-const PostCard = ({ title, imageSrc, description, className }: IPostCardProps) => {
+const PostCard = ({
+  title,
+  imageSrc,
+  description,
+  className,
+}: IPostCardProps) => {
   return (
     <Link href={`/blogs/${title}`} className={`w-[325px] ${className}`}>
       <Image

@@ -18,7 +18,6 @@ const WhyChooseCard: React.FC<IWhyChooseCard> = ({ data }) => {
                 alt={`Why choose: ${data.title}`}
                 width={355}
                 height={178}
-                unoptimized
                 loading="lazy"
                 className="w-full lg:max-h-[240px] lg:max-w-[40%] object-contain"
             />
